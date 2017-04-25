@@ -1,0 +1,155 @@
+html, body {
+  margin: 0;
+ 	padding: 0;
+ 	border: 0;
+ 	vertical-align: baseline;
+  font-family: 'Oswald', sans-serif;
+  background: #56585A;
+  color: #E4CD30;
+  text-shadow: 1px 1px black;
+}
+.colorBtn {
+  opacity: .8;
+}
+#red {
+  background-color: #EF002A;
+  border-top-right-radius: 100%;
+  width: 250px;
+  height: 250px;
+  z-index: 5;
+}
+#green {
+  background-color: #41DB00;
+  border-top-left-radius: 100%;
+  width: 250px;
+  height: 250px;
+  z-index: 5;
+}
+#blue {
+  background-color: #00A67C;
+  border-bottom-right-radius: 100%;
+  width: 250px;
+  height: 250px;
+  z-index: 5;
+}
+#yellow {
+  background-color: #FF5F00;
+  border-bottom-left-radius: 100%;
+  width: 250px;
+  height: 250px;
+  z-index: 5;
+}
+.playing{
+  opacity: 1;
+}
+#controlPanel {
+  z-index: 8;
+  width:220px;
+  height:220px;
+  position : fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-radius:100%;
+  background-color:#ECE7EE;
+  border: 12px solid #333;
+  background: url('http://download.4-designer.com/files/20130906/Steel-background-02-HD-Photo-48985.jpg');
+  background-size: cover;
+}
+.name {
+  font-family: 'Alfa Slab One', cursive;
+  color : #315EBE;
+  font-size: 2.5em;
+  font-weight: 200;
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+.panelWrapper {
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  border: 12px solid #333;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex column;
+  justify-content: center;
+  align-content: center;
+}
+.panelRow {
+  height: 250px;
+  width: 500px;
+  margin: 0;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+#start {
+  font-size: 1.25em;
+  position: absolute;
+  top: 50%;
+  margin-top: -16px;
+  left: 50%;
+  margin-left: -19px;
+  height: 20px;
+  width: 50px;
+  cursor: pointer;
+}
+#countWrapper {
+  height: 22px;
+  width: 44px;
+  border: 6px solid #333;
+  border-radius: 5px;
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+  left: 12px;
+  background-color: gray;
+  text-align: right;
+}
+#count {
+  position: absolute;
+  top: -17px;
+  right: 5px;
+}
+#strictBtn {
+  height: 18px;
+  width: 18px;
+  background-color: darkred;
+  border: 6px solid #333;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  margin-top: -13px;
+  right: 25px;
+  cursor: pointer;
+}
+#strictHeader {
+  font-family: 'Oswald', sans-serif;
+  position: absolute;
+  top: 105px;
+  right: 15px;
+}
+#tryAgain, #loseGame, #winGame {
+  text-align: center;
+  border: 12px solid #333;
+  height: 250px;
+  width: 250px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  display: none;
+  z-index: 10;
+}

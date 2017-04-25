@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FCC Simon&#174 Project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Oswald" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="outerWrapper">
+        <div id="controlPanel">
+            <h1 class='name'>Simon&#174</h1>
+            <div id="countWrapper">
+                <p id='count'>0</p>
+            </div>
+            <span id="start">Start</span>
+            <span id="strictBtn"></span>
+            <h4 id="strictHeader">Strict Mode</h4>
+        </div>
+
+
+        <div class="panelWrapper">
+            <div class="panelRow">
+                <div id="green" class="colorBtn">
+                    <audio id="greenSound" src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" preload="auto"></audio>
+                </div>
+                <div id="red" class="colorBtn">
+                    <audio id="redSound" src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" preload="auto"></audio>
+                </div>
+            </div>
+
+            <div class="panelRow">
+                <div id="yellow" class="colorBtn">
+                    <audio id="yellowSound" src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" preload="auto"></audio>
+                </div>
+                <div id="blue" class="colorBtn">
+                    <audio id="blueSound" src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" preload="auto"></audio>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="tryAgain">
+        <h3>Wrong Color!</h3>
+        <p>You have <span id="tries"></span> tries left</p>
+    </div>
+    <div id="loseGame">
+        <h3>You Lose!</h3>
+    </div>
+    <div id="winGame">
+        <h3>You Win!</h3>
+        <p>20 rounds, now that's impressive! Thanks so much for trying my Simon&#174 game.</p>
+    </div>
+
+</body>
+<script src="js/script.js"></script>
+
+</html>
